@@ -60,6 +60,7 @@ public final class MawiEXTEND extends JavaPlugin {
         pm.registerEvents(new AutoToolsListener(this), this);
         pm.registerEvents(new AutoInventoryListener(this), this);
         pm.registerEvents(new ChatListener(this), this);
+        pm.registerEvents(new BlockBreakListener(this), this); // <-- TAMBAHAN BARU
     }
 
     public void reloadPluginConfig() {
