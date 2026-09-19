@@ -4,6 +4,7 @@ import com.rabusoore.mawiextend.MawiEXTEND;
 import io.papermc.paper.event.player.AsyncChatEvent;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 
 public class ChatListener implements Listener {
