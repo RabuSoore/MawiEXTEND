@@ -1,0 +1,20 @@
+name: MawiEXTEND
+version: '1.0.0'
+main: com.rabusoore.mawiextend.MawiEXTEND
+api-version: '1.21'
+author: Rabusoore
+description: Modular utility plugin providing hotbar sounds, pickup titles, auto-tools, and auto-inventory.
+
+commands:
+  autotools:
+    description: Toggle Auto Tools feature
+    permission: mawiextend.command.autotools
+    usage: /autotools <on|off|toggle>
+  autoinventory:
+    description: Toggle Auto Inventory feature
+    permission: mawiextend.command.autoinventory
+    usage: /autoinventory <on|off|toggle>
+  mawiextend:
+    description: Main reload command for MawiEXTEND
+    permission: mawiextend.admin
+    usage: /mawiextend reload
