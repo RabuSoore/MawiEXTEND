@@ -54,22 +54,22 @@ public class AutoToolsListener implements Listener {
         return bestSlot;
     }
 
-    private double getToolDestroySpeed(Material tool, Material block) {
+    private double getToolDestroySpeed(Material tool, Material blockMaterial) {
         String toolName = tool.name();
 
-        if (Tag.MINEABLE_WITH_PICKAXE.isTagged(block) && toolName.endsWith("_PICKAXE")) {
+        if (Tag.MINEABLE_PICKAXE.isTagged(blockMaterial) && toolName.endsWith("_PICKAXE")) {
             return getToolTierMultiplier(toolName);
         }
-        if (Tag.MINEABLE_WITH_AXE.isTagged(block) && toolName.endsWith("_AXE")) {
+        if (Tag.MINEABLE_AXE.isTagged(blockMaterial) && toolName.endsWith("_AXE")) {
             return getToolTierMultiplier(toolName);
         }
-        if (Tag.MINEABLE_WITH_SHOVEL.isTagged(block) && toolName.endsWith("_SHOVEL")) {
+        if (Tag.MINEABLE_SHOVEL.isTagged(blockMaterial) && toolName.endsWith("_SHOVEL")) {
             return getToolTierMultiplier(toolName);
         }
-        if (Tag.MINEABLE_WITH_HOE.isTagged(block) && toolName.endsWith("_HOE")) {
+        if (Tag.MINEABLE_HOE.isTagged(blockMaterial) && toolName.endsWith("_HOE")) {
             return getToolTierMultiplier(toolName);
         }
-        if (block == Material.COBWEB && (toolName.endsWith("_SWORD") || tool == Material.SHEARS)) {
+        if (blockMaterial == Material.COBWEB && (toolName.endsWith("_SWORD") || tool == Material.SHEARS)) {
             return 15.0;
         }
 
