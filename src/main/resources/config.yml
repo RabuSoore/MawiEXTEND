@@ -38,6 +38,17 @@ title-pickup:
   title: ""
   subtitle: "<gradient:#FF5555:#FFAA00>%item_name%</gradient> <gray>x%amount%</gray>"
 
+# ====================================================
+#               Title Saat Hancurkan Blok
+# ====================================================
+title-block-break:
+  enabled: true
+  fade-in-ms: 100
+  stay-ms: 600
+  fade-out-ms: 200
+  title: ""
+  subtitle: "<gradient:#55FF55:#00AA00>%block_name%</gradient> <gray>Mined</gray>"
+
 messages:
   prefix: "<gradient:#00FFAA:#00AAFF>[MawiEXTEND]</gradient> "
   auto-tools-toggle: "%prefix%<gray>Auto Tools feature is now </gray>%status%<gray>.</gray>"
