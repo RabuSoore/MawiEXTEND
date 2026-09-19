@@ -1,0 +1,48 @@
+# ====================================================
+#               MawiEXTEND Configuration
+#                 Author: Rabusoore
+#             Target Version: Paper 1.21.1
+# ====================================================
+
+defaults:
+  auto-tools: true
+  auto-inventory: true
+
+sounds:
+  hotbar:
+    enabled: true
+    sound: "block.note_block.hat"
+    volume: 0.4
+    pitch: 1.2
+  item-drop:
+    enabled: true
+    sound: "entity.arrow.shoot"
+    volume: 0.5
+    pitch: 1.5
+  item-pickup:
+    enabled: true
+    sound: "entity.item.pickup"
+    volume: 0.6
+    pitch: 1.0
+  chat-send:
+    enabled: true
+    sound: "entity.experience_orb.pickup"
+    volume: 0.5
+    pitch: 1.8
+
+title-pickup:
+  enabled: true
+  fade-in-ms: 100
+  stay-ms: 800
+  fade-out-ms: 200
+  title: ""
+  subtitle: "<gradient:#FF5555:#FFAA00>%item_name%</gradient> <gray>x%amount%</gray>"
+
+messages:
+  prefix: "<gradient:#00FFAA:#00AAFF>[MawiEXTEND]</gradient> "
+  auto-tools-toggle: "%prefix%<gray>Auto Tools feature is now </gray>%status%<gray>.</gray>"
+  auto-inventory-toggle: "%prefix%<gray>Auto Inventory feature is now </gray>%status%<gray>.</gray>"
+  status-enabled: "<green><bold>ENABLED</bold></green>"
+  status-disabled: "<red><bold>DISABLED</bold></red>"
+  no-permission: "%prefix%<red>You do not have permission to execute this command!</red>"
+  reload-success: "%prefix%<green>Configuration successfully reloaded!</green>"
